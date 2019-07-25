@@ -3,8 +3,56 @@ body{
 }
 
 
+
+.game-container{
+	display:flex;
+}
+
+.gallow svg{
+	height:30vh;
+
+}
+
+.gallow.mistake-0 .head,
+.gallow.mistake-0 .neck,
+.gallow.mistake-0 .body,
+.gallow.mistake-0 .arm,
+.gallow.mistake-0 .leg{
+	display:none;
+}
+
+
+.gallow.mistake-1 .neck,
+.gallow.mistake-1 .body,
+.gallow.mistake-1 .arm,
+.gallow.mistake-1 .leg{
+	display:none;
+}
+
+.gallow.mistake-2 .body,
+.gallow.mistake-2 .arm,
+.gallow.mistake-2 .leg{
+	display:none;
+}
+
+
+.gallow.mistake-3 .arm,
+.gallow.mistake-3 .leg{
+	display:none;
+}
+
+
+.gallow.mistake-4 .leg{
+	display:none;
+}
+
+.gallow.mistake-6 .head{
+	fill:blue;
+}
+
+
 .puzzle-container{
-	width:100vw;
+	width:calc(100vw -30vh);
 	display:flex;
 	justify-content:center;
 }
@@ -50,4 +98,40 @@ body{
 	width: calc(100vw -120px);
 	display:flex;
 	justify-content:space-around;
+}
+
+.bad-letters{
+	text-align:center;
+	color:red;
+	font-weight:bold;
+	font-size:2rem;
+	text-shadow:1px 1px black;
+
+}
+
+
+.game-status-message{
+
+}
+
+.lose-message{
+	position:fixed;
+	top:20px;
+	left:40vw;
+	right:40vw;
+
+	background-color:red;
+	font-size:2rem;
+
+}
+
+.win-message{
+	position:fixed;
+	top:20px;
+	left:40vw;
+	right:40vw;
+
+	background-color:green;
+	font-size:2rem;
+
 }
